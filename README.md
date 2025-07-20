@@ -50,3 +50,7 @@ Export tasks as JSON.
 <img width="1366" height="768" alt="Screenshot (65)" src="https://github.com/user-attachments/assets/074527e3-5bf1-4a59-8f39-a3e6a253826f" />
 <img width="1366" height="768" alt="Screenshot (63)" src="https://github.com/user-attachments/assets/6a1614a0-9fa0-421e-b6b9-baea64ab8333" />
 <img width="1366" height="768" alt="Screenshot (64)" src="https://github.com/user-attachments/assets/4235e9e1-cfbe-4d84-8aa7-555c0d39d32a" />
+
+Login Credentials:
+Admin : admin@me.com , Password: 123
+employee: e@e.com, Password 123
