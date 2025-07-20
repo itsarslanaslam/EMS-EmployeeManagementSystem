@@ -52,5 +52,5 @@ Export tasks as JSON.
 <img width="1366" height="768" alt="Screenshot (64)" src="https://github.com/user-attachments/assets/4235e9e1-cfbe-4d84-8aa7-555c0d39d32a" />
 
 Login Credentials:
-Admin : admin@me.com , Password: 123
+Admin : admin@me.com , Password: 123 |
 employee: e@e.com, Password 123
