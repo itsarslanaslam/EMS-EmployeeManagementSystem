@@ -1,153 +1,52 @@
 # Employee Management System (EMS)
+A modern Employee Management System built with React.js, Node.js, and MongoDB.
 
-A modern React-based task management system with advanced features for employees and administrators.
+This application allows organizations to efficiently manage employees and their tasks with a clean, responsive, and interactive interface.
 
-## ✨ New Features & Improvements
+✨ Key Features
+👥 Admin Dashboard: Create, assign, and manage tasks for employees.
 
-### 🎨 Enhanced UI/UX
-- **Modern Design**: Gradient backgrounds, hover effects, and smooth transitions
-- **Responsive Layout**: Better mobile and desktop experience
-- **Visual Feedback**: Progress bars, status indicators, and animations
-- **Priority System**: Color-coded priority levels (Urgent, High, Medium, Low)
+✅ Employee Dashboard: Employees can view, accept, complete, or fail tasks.
 
-### 📊 Advanced Analytics
-- **Performance Metrics**: Completion rate, failure rate, and success tracking
-- **Visual Charts**: Progress bars and performance indicators
-- **Real-time Stats**: Live updates of task counts and performance
-- **Export Functionality**: Download task data as JSON files
+📊 Task Tracking: Real-time task status updates with counts for new, active, completed, and failed tasks.
 
-### 🔍 Smart Search & Filtering
-- **Search Tasks**: Find tasks by title, description, or category
-- **Status Filtering**: Filter by New, Active, Completed, or Failed tasks
-- **Priority Filtering**: Filter by priority levels
-- **Clear Filters**: Easy reset of all filters
+🔐 Authentication System: User signup & login (Admin & Employee roles).
 
-### 💬 Task Collaboration
-- **Comments System**: Add notes and updates to active tasks
-- **Timestamps**: Track when tasks were accepted, completed, or failed
-- **Progress Tracking**: Visual progress indicators for active tasks
+💾 Persistent Data Storage: Powered by MongoDB and synced with browser localStorage for quick access.
 
-### ✅ Enhanced Task Management
-- **Form Validation**: Required field validation with error messages
-- **Date Validation**: Prevent setting due dates in the past
-- **Task IDs**: Unique identifiers for better tracking
-- **Overdue Alerts**: Visual indicators for overdue tasks
+🎨 Modern UI/UX: Built with Tailwind CSS & Styled Components for a sleek dark mode interface.
 
-## Features
+🌌 Interactive 3D Background (Three.js): Makes the app visually engaging.
 
-### Admin Features
-- Create and assign tasks to employees with priority levels
-- View all employees and their task status
-- Monitor task completion rates and performance
-- Enhanced task creation form with validation
+📥 Export Tasks: Employees can export their tasks as a JSON file.
 
-### Employee Features
-- View assigned tasks with priority indicators
-- Accept tasks and track progress
-- Mark tasks as completed or failed
-- Add comments and notes to tasks
-- Search and filter tasks
-- Export task data
-- Real-time task count updates
+🛠️ Tech Stack
+Frontend	Backend	Database
+React.js	Node.js	MongoDB
+Tailwind CSS	Express.js	Mongoose
+Styled Components	JWT & bcrypt (Auth)	
 
-## Recent Fixes
+📂 Modules
+Admin
 
-### 1. Task Assignment Issue Fixed ✅
-- **Problem**: Tasks created by admin were not showing on employee pages
-- **Solution**: Updated data synchronization between admin and employee dashboards
-- **Changes**: 
-  - Modified `EmployeeDashboard.jsx` to sync with `userData` context
-  - Updated `App.jsx` to handle data synchronization
-  - Fixed task creation in `CreateTask.jsx`
+Add and manage employees.
 
-### 2. Task Status Management ✅
-- **Problem**: Buttons for task status changes had no functionality
-- **Solution**: Implemented complete task workflow
-- **Changes**:
-  - Added `handleAcceptTask()` in `NewTask.jsx`
-  - Added `handleMarkAsCompleted()` and `handleMarkAsFailed()` in `AcceptTask.jsx`
-  - Added task count updates when status changes
-  - Updated localStorage synchronization
+Assign tasks with priority levels (Urgent, High, Medium, Low).
 
-### 3. Task Count Updates ✅
-- **Problem**: Task numbers weren't updating when tasks changed status
-- **Solution**: Implemented real-time task count calculations
-- **Changes**:
-  - Updated task count logic in all task components
-  - Added proper initialization in `AuthProvider.jsx`
-  - Fixed property name mismatches (title, description, date)
+Monitor task completion statistics.
 
-## How to Test
+Employee
 
-### Admin Login
-- Email: `admin@me.com`
-- Password: `123`
+Accept new tasks.
 
-### Employee Login
-- Email: `e@e.com` (Ahmed)
-- Password: `123`
+Update task progress (Complete/Fail).
 
-### Testing Workflow
-1. **Login as admin**
-2. **Create a new task** with priority level and assign it to an employee
-3. **Login as the assigned employee**
-4. **Verify the task appears** in "New Task" section with priority indicator
-5. **Click "Accept Task"** to move it to "Accepted Task" section
-6. **Add comments** to the task while working on it
-7. **Click "Mark as Completed" or "Mark as Failed"** to change status
-8. **Use search and filters** to find specific tasks
-9. **Export task data** using the export button
-10. **Verify task counts update** correctly in all sections
+Add comments to tasks.
 
-## Technical Details
+Export tasks as JSON.
 
-### Data Structure
-Tasks have the following properties:
-- `title`: Task title
-- `description`: Task description
-- `date`: Due date
-- `category`: Task category
-- `priority`: Priority level (urgent, high, medium, low)
-- `newTask`: Boolean for new tasks
-- `active`: Boolean for accepted tasks
-- `completed`: Boolean for completed tasks
-- `failed`: Boolean for failed tasks
-- `createdAt`: Task creation timestamp
-- `acceptedAt`: Task acceptance timestamp
-- `completedAt`: Task completion timestamp
-- `failedAt`: Task failure timestamp
-- `comments`: Array of task comments
-- `id`: Unique task identifier
 
-### State Management
-- Uses React Context (`AuthContext`) for global state
-- localStorage for persistence
-- Real-time synchronization between admin and employee views
-- Optimized re-rendering with useMemo for filtering
-
-### UI Components
-- **TaskListNumbers**: Enhanced analytics dashboard with progress bars
-- **TaskList**: Search and filtering functionality
-- **Task Cards**: Modern design with priority indicators and hover effects
-- **CreateTask**: Form validation and improved UX
-
-## Installation
-
-```bash
-npm install
-npm run dev
-```
-
-The application will be available at `http://localhost:5173`
-
-## Browser Compatibility
-- Chrome (recommended)
-- Firefox
-- Safari
-- Edge
-
-## Performance Features
-- Optimized filtering with useMemo
-- Efficient state updates
-- Minimal re-renders
-- Responsive design for all screen sizes
+<img width="1366" height="768" alt="Screenshot (62)" src="https://github.com/user-attachments/assets/7a57c1c1-58ca-438c-a93b-db93fb48ab94" />
+<img width="1366" height="768" alt="Screenshot (65)" src="https://github.com/user-attachments/assets/074527e3-5bf1-4a59-8f39-a3e6a253826f" />
+<img width="1366" height="768" alt="Screenshot (63)" src="https://github.com/user-attachments/assets/6a1614a0-9fa0-421e-b6b9-baea64ab8333" />
+<img width="1366" height="768" alt="Screenshot (64)" src="https://github.com/user-attachments/assets/4235e9e1-cfbe-4d84-8aa7-555c0d39d32a" />
